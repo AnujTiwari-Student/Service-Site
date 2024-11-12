@@ -4,6 +4,7 @@ import Cards from "@/components/Cards";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import MainSection from "@/components/MainSection";
+import PrivacyPolicy from "@/components/PrivacyPolicy";
 import TrustedBySection from "@/components/TrustedBy";
 import WhoWeAre from "@/components/WhoWeAre";
 
@@ -15,8 +16,8 @@ export default function Home() {
       <TrustedBySection />
       <Cards />
       <MainSection />
-      {/* <WhoWeAre /> */}
       <Footer />
+      <PrivacyPolicy />
     </main>
   );
 }
