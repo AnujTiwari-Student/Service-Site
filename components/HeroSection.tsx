@@ -1,11 +1,11 @@
 'use client';
 
 import Image from "next/image";
-import img from "../assets/Images@2x.png";
+import img from "/public/Images@2x.png";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between md:mx-10 xl:mx-20 mx-4 my-8 md:my-16 xl:my-22 ">
+    <div className="flex flex-col md:flex-row justify-center xl:gap-x-20 md:mx-10 xl:mx-20 mx-4 my-8 md:my-16 xl:my-22 ">
       <div className="space-y-4 w-full md:w-2/4 xl:w-2/5 xl:mt-16 md:mt-10">
         <h1 className="font-semibold xl:text-xl">GLOBAL EXPERIENCE</h1>
         <h1 className="md:text-6xl text-4xl font-bold">
