@@ -37,7 +37,7 @@ const contactInfo = {
 
 function Footer() {
   return (
-    <footer className='mx-4 md:mx-20 my-24 flex flex-col justify-around space-y-6 xl:space-y-0 xl:flex-row'>
+    <footer className='mx-4 md:mx-20 mt-24 mb-10 flex flex-col justify-around space-y-6 xl:space-y-0 xl:flex-row'>
       <div className='flex-col flex xl:w-[300px] mr-10'>
         <Image src={logo} alt='logo' className='h-12 w-12 mb-4' />
         <p className='mb-4 text-[#4e6770]'>

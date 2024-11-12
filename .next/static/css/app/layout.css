@@ -702,6 +702,12 @@ video {
 .mr-10 {
   margin-right: 2.5rem;
 }
+.mt-24 {
+  margin-top: 6rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .flex {
   display: flex;
 }
