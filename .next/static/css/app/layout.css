@@ -1464,6 +1464,10 @@ video {
     top: 730px;
   }
 
+  .xl\:top-\[750px\] {
+    top: 750px;
+  }
+
   .xl\:-my-20 {
     margin-top: -5rem;
     margin-bottom: -5rem;
