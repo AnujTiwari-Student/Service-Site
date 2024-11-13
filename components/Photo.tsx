@@ -19,7 +19,7 @@ function Photo() {
 
   // Calculate transform with delay
   const calculateTransform = (initialOffset: number) => {
-    return `translateY(${initialOffset + (scrollY - 100) * 0.1}px)`; // Adjusting the offset for initial position
+    return `translateY(${initialOffset + (scrollY - 100) * 0.1}px)`; 
   };
 
   return (

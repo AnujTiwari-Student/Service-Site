@@ -3,8 +3,7 @@
 import Cards from "@/components/Cards";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import MainSection from "@/components/MainSection";
-import PrivacyPolicy from "@/components/PrivacyPolicy";
+import { BentoGridThirdDemo } from "@/components/MainSection";
 import TrustedBySection from "@/components/TrustedBy";
 import WhoWeAre from "@/components/WhoWeAre";
 
@@ -15,9 +14,8 @@ export default function Home() {
       <HeroSection />
       <TrustedBySection />
       <Cards />
-      <MainSection />
+      <BentoGridThirdDemo />
       <Footer />
-      <PrivacyPolicy />
     </main>
   );
 }

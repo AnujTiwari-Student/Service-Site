@@ -1,120 +1,80 @@
-import Image from 'next/image';
-import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import logo from '../assets/logo1.webp';
-import appleBtn from '../assets/appstore-btn.png';
-import googleBtn from '../assets/google-play-btn.png';
-import paymentMethod from '../assets/payment-method.png';
+'use client'
 
-const socialLinks = [
-  { href: 'https://www.instagram.com/rentalcar/', Icon: FaInstagram },
-  { href: 'https://www.facebook.com/rentalcar/', Icon: FaFacebookF },
-  { href: 'https://twitter.com/rentalcar', Icon: FaTwitter },
-];
+import React from 'react'
+import { Facebook, Twitter, Instagram } from 'lucide-react' // Optional: Use Lucide icons for social media
 
-const discoverLinks = [
-  'Rental Tips',
-  'News and Updates',
-  'Low-Cost Rent',
-  'Car Adventures',
-  'Insurance Cases',
-  'Portfolio',
-];
-
-const customerInfoLinks = [
-  'FAQs',
-  'Our Features',
-  'Our Benefits',
-  'Rent a Car',
-  'Testimonials',
-];
-
-const contactInfo = {
-  address: '4 Goldfield Rd.',
-  phoneNumbers: ['0 800 555 22 33'],
-  email: 'yourmail@.com',
-};
-
-function Footer() {
+const Footer = () => {
   return (
-    <footer className='mx-4 md:mx-20 mt-24 mb-10 flex flex-col justify-around space-y-6 xl:space-y-0 xl:flex-row'>
-      <div className='flex-col flex xl:w-[300px] mr-10'>
-        <Image src={logo} alt='logo' className='h-12 w-12 mb-4' />
-        <p className='mb-4 text-[#4e6770]'>
-          With so many options for rental service, you must choose the best company. We give you a wide range of quality rides!
-        </p>
-        <p className='font-semibold text-lg mb-2 text-[#024430]'>Follow Us</p>
-        <div className='flex space-x-4 items-end'>
-          {socialLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='hover:-translate-y-1 transition-transform duration-500'
-            >
-              <link.Icon size={24} color='#024430' />
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <div className='flex flex-col md:flex-row md:space-x-20 xl:space-x-0'>
-        <div className='flex flex-col space-y-4 xl:w-[200px] my-6 md:my-0'>
-          <h1 className='text-2xl font-semibold text-[#024430]'>Discover</h1>
-          <div className='space-y-1'>
-            {discoverLinks.map((link, index) => (
-              <p key={index} className='text-[#4e6770]'>
-                {link}
-              </p>
-            ))}
-          </div>
-        </div>
-        <div className='flex flex-col space-y-4 xl:w-[200px]'>
-          <h1 className='text-2xl font-semibold text-[#024430]'>Customer Info</h1>
-          <div className='space-y-1'>
-            {customerInfoLinks.map((link, index) => (
-              <p key={index} className='text-[#4e6770]'>
-                {link}
-              </p>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className='flex flex-col md:flex-row md:space-x-20 xl:space-x-12'>
-        <div className='flex flex-col space-y-4 xl:w-[200px] my-6 md:my-0'>
-          <h1 className='text-2xl font-semibold text-[#024430]'>Contact Us</h1>
-          <div className='space-y-1'>
-            <p className='text-[#4e6770]'>Our Address:</p>
-            <p className='text-[#4e6770]'>{contactInfo.address}</p>
-            <p className='text-[#4e6770]'>Phone Number:</p>
-            {contactInfo.phoneNumbers.map((phone, index) => (
-              <p key={index} className='text-[#4e6770]'>{phone}</p>
-            ))}
-            <p className='text-[#4e6770]'>Email Address:</p>
-            <p className='text-[#4e6770]'>{contactInfo.email}</p>
-          </div>
-        </div>
-        <div className='flex flex-col space-y-4 xl:w-[250px]'>
-          <h1 className='text-2xl font-semibold text-[#024430]'>App and Payment</h1>
-          <div className='space-y-4'>
-            <p className='text-[#4e6770]'>
-              Download our Apps and get extra 15% Discount on your first Order…!
+    <div className="bg-gray-800 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Logo and Company Info */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Bharat Health</h3>
+            <p className="text-sm mb-4">
+              Empowering healthcare professionals with efficient patient management. Stay organized, save time, and enhance care.
             </p>
-            <div className='flex space-x-6 xl:space-x-4'>
-              <Image src={appleBtn} alt='App Store Button' className='h-auto w-24 cursor-pointer' />
-              <Image src={googleBtn} alt='Google Play Button' className='h-auto w-24 cursor-pointer' />
-            </div>
-            <div className='flex flex-col space-y-4'>
-              <p className='text-[#4e6770]'>Secured Payment Gateways</p>
-              <Image src={paymentMethod} alt='Payment Methods' />
+          </div>
+
+          {/* Useful Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
+            <ul>
+              <li>
+                <a href="#home" className="text-sm hover:text-teal-500">Home</a>
+              </li>
+              <li>
+                <a href="#about" className="text-sm hover:text-teal-500">About</a>
+              </li>
+              <li>
+                <a href="#contact" className="text-sm hover:text-teal-500">Contact</a>
+              </li>
+              <li>
+                <a href="#privacy" className="text-sm hover:text-teal-500">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social Media */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <Facebook className="w-6 h-6 text-gray-400 hover:text-teal-500" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <Twitter className="w-6 h-6 text-gray-400 hover:text-teal-500" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <Instagram className="w-6 h-6 text-gray-400 hover:text-teal-500" />
+              </a>
             </div>
           </div>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
+            <p className="text-sm mb-4">Subscribe to our newsletter for the latest updates and news.</p>
+            <form className="flex">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="px-4 py-2 rounded-l-lg border border-gray-300 w-full text-sm text-black"
+              />
+              <button type="submit" className="px-4 py-2 bg-teal-500 text-white rounded-r-lg">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
+          <p>&copy; 2024 Bharat Health. All Rights Reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </div>
+  )
 }
 
-export default Footer;
+export default Footer
