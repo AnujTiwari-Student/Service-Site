@@ -2106,6 +2106,10 @@ video {
     margin-top: 8rem;
   }
 
+  .xl\:mt-28 {
+    margin-top: 7rem;
+  }
+
   .xl\:flex {
     display: flex;
   }
