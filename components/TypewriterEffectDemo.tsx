@@ -22,7 +22,7 @@ export function TypewriterEffectDemo() {
     },
   ];
   return (
-    (<div className="absolute top-[660px] hidden xl:flex xl:px-16">
+    (<div className="absolute top-[730px] hidden xl:flex xl:px-20">
       <TypewriterEffect words={words} />
     </div>)
   );

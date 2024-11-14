@@ -7,7 +7,7 @@ import { AppleCardsCarouselDemo } from "./AppleCardCarousel";
 const HeroSection: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between md:mx-10 xl:mx-20 mx-4 my-8 md:my-16 xl:my-22">
-      <div className="space-y-4 w-full md:w-2/4 xl:w-2/5 xl:mt-16 md:mt-10">
+      <div className="space-y-4 w-full md:w-2/4 xl:w-2/5 xl:mt-32 md:mt-10">
         <h1 className="font-semibold xl:text-xl">BHARAT HEALTH</h1>
         <h1 className="md:text-6xl text-4xl font-bold">
           <span>Your Health,</span> Our Priority.
