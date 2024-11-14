@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import img from "/public/Images@2x.png";
+import { AppleCardsCarouselDemo } from "./AppleCardCarousel";
 
 const HeroSection: React.FC = () => {
   return (
@@ -20,8 +21,8 @@ const HeroSection: React.FC = () => {
           GET STARTED
         </button>
       </div>
-      <div className="md:h-[480px] md:w-auto xl:h-auto xl:w-auto">
-        <Image src={img} alt="Bharat Health App Image" className="xl:h-[721px] w-auto md:h-[450px]" />
+      <div className="md:h-[480px] md:w-auto xl:h-auto xl:w-[600px]">
+       <AppleCardsCarouselDemo />
       </div>
     </div>
   );
